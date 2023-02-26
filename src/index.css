@@ -1,0 +1,80 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.numbers,
+.operator,
+.dot,
+.clear,
+.equal {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 1.2em 3em;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1d1919;
+  cursor: pointer;
+  transition: border-color 0.1 s;
+}
+
+.equal {
+  background-color: #535bf2;
+  font-size: 2rem;
+  grid-column: span 2;
+}
+
+.equal:hover {
+  color: red;
+}
+
+button:hover {
+  color: rgb(119, 238, 222);
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+}
+
+.screen {
+  grid-column: span 3;
+  height: 100px;
+  font-size: 2.2rem;
+  color: aqua;
+  text-align: end;
+}
+.screen2 {
+  grid-column: span 3;
+  color: aqua;
+  height: 30px;
+  text-align: end;
+}
